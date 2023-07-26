@@ -1,0 +1,15 @@
+pyuic6 -x GUI_LOL.ui -o GUI_LOL.py
+
+
+
+POST /lol-matchmaking/v1/ready-check/accept -> api chấp nhận trận đấu
+/lol-champions/v1/owned-champions-minimal -> api lấy champ đang có
+/lol-summoner/v1/current-summoner -> api lấy thông tin
+ /lol-champ-select/v1/session -> api lấy thông tin ban/pick
+PATCH /lol-champ-select/v1/session/actions/{id} -> api pick tướng
+
+
+{
+                "championId": 2,
+                "completed": false
+}
