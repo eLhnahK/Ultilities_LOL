@@ -7,7 +7,7 @@
   
 
    # **Ultilities LOL**
-   [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
+   [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Ultilities+LOL)](https://git.io/typing-svg)
 
    <img src="https://user-images.githubusercontent.com/58574988/134170370-c827d712-fcc7-432f-b9f8-96678b0c9bf6.gif">
 
