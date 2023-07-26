@@ -6,10 +6,7 @@
    [![x64](https://img.shields.io/badge/Arch-x64-red.svg?style=plastic)](https://en.wikipedia.org/wiki/X86-64)
   
 
-   # **R3nzSkin**
-
-   ## Announcement
-   I am currently continuing my military service, and as the place where I am serving is a border region, updates may be delayed or may not arrive.
+   # **Ultilities LOL**
 
    <img src="https://user-images.githubusercontent.com/58574988/134170370-c827d712-fcc7-432f-b9f8-96678b0c9bf6.gif">
 
