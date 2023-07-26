@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-   [![Python](https://img.shields.io/badge/Language-Python-blue)](https://en.wikipedia.org/wiki/Python_(programming_language))
+   [![Python](https://img.shields.io/badge/Language-Python-blue?style=plastic)](https://en.wikipedia.org/wiki/Python_(programming_language))
    [![LOL](https://img.shields.io/badge/Game-League%20of%20Legends-445fa5.svg?style=plastic)](https://www.leagueoflegends.com/vi-vn/)
    [![Windows](https://img.shields.io/badge/Platform-Windows-0078d7.svg?style=plastic)](https://en.wikipedia.org/wiki/Microsoft_Windows)
    [![x64](https://img.shields.io/badge/Arch-x64-red.svg?style=plastic)](https://en.wikipedia.org/wiki/X86-64)
