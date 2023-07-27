@@ -18,8 +18,7 @@
 
 # Tutorial
    1. Clone the source with `git clone https://github.com/eLhnahK/Ultilities_LOL`
-   2. Install support library ```bash 
-      pip install -r requirements.txt```
+   2. Install support library ```bash pip install -r requirements.txt```
    4. Run ```python UltilitiesLOL.py```
 
 ## Help
@@ -34,3 +33,6 @@
 💰 MOMO: 0905324707<br />
 💰 ViettelPay: 0905324707<br />
 💰 MB Bank: 9704229202584735018
+```bash
+pip install foobar
+```
