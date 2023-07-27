@@ -13,17 +13,14 @@
 
 </div>
 
-- Change the skin of your champion, your ward, other champions, towers, minions, and jungle monsters in the game.
-- Automatic skin database update.
-- Support for spectator mode.
-- Change skins anytime and unlimited times in a single game.
-- Supports all popular languages ​​in the world.
-- In-game configuration with <a href="https://github.com/ocornut/imgui">ImGui</a>.
-- <a href="https://github.com/nlohmann/json">JSON</a> based configuration saving & loading
+- Support for quick champion selection with two mods (Only Pick and Lock).
+- Auto update champion from <a href="https://riot-api-libraries.readthedocs.io/en/latest/lcu.html">LCU API</a>..
 
-# Building
-   1. Clone the source with `git clone --recursive https://github.com/R3nzTheCodeGOD/R3nzSkin.git`
-   2. Build in Visual Studio 2019/2022 with configuration "Your Region - x64"
+# Tutorial
+   1. Clone the source with `git clone https://github.com/eLhnahK/Ultilities_LOL`
+   2. ```bash
+pip install foobar
+```
 
 # Usage
    1. Compile source or <a href="https://github.com/R3nzTheCodeGOD/R3nzSkin/releases/latest">download</a> a compiled version.
