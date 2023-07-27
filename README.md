@@ -17,7 +17,7 @@
 - Auto update champion from <a href="https://riot-api-libraries.readthedocs.io/en/latest/lcu.html">LCU API</a>.
 
 # Tutorial
-   1. Clone the source with
+   1. Clone the source with command
 ```bash
 git clone https://github.com/eLhnahK/Ultilities_LOL
 ```
@@ -25,7 +25,7 @@ git clone https://github.com/eLhnahK/Ultilities_LOL
 ```bash
 pip install -r requirements.txt
 ```
-   3. Run
+   3. Run command
 ```bash
 python UltilitiesLOL.py
 ```
