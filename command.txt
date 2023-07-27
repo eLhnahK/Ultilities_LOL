@@ -1,4 +1,4 @@
-pyuic6 -x GUI_LOL.ui -o GUI_LOL.py
+pyuic6 -x GUI_LOL.ui -o GUI_LOL.py -> convert .ui to .py
 
 
 
