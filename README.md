@@ -18,21 +18,5 @@
 
 # Tutorial
    1. Clone the source with `git clone https://github.com/eLhnahK/Ultilities_LOL`
-   2. ```bash
-pip install foobar
-```
-
-# Usage
-   1. Compile source or <a href="https://github.com/R3nzTheCodeGOD/R3nzSkin/releases/latest">download</a> a compiled version.
-   2. Use `R3nzSkin_Injector.exe` or inject the built DLL into the game yourself.
-      - *Administrator* privilege may be needed if the injector failed to inject the DLL.
-      - League client can crash if `R3nzSkin` is injected before being in the game.
-         - A workaround is to not inject until you are in the game (you will need to be fast to not disrupt the game).
-   3. Press <kbd>Insert</kbd> to bring up the menu.
-   4. Select the skin for you, your teammates, enemies, and wards.
-
-# Further optimizations
-   If your CPU supports AVX / AVX2 / AVX-512 instruction set, you can enable it in project settings. This should result in more performant code, optimized for your CPU. Currently SSE2 instructions are selected in project settings.
-
-# Credits
-   This program is an improved and updated version of the <a href="https://github.com/B3akers">B3akers</a>/<a href="https://github.com/B3akers/LeagueSkinChanger">LeagueSkinChanger</a> project.
+   2. Install support library ```pip install -r requirements.txt```
+   3. Run ```python UltilitiesLOL.py```
