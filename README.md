@@ -14,7 +14,7 @@
 </div>
 
 - Support for quick champion selection with two modes (Only Pick and Lock).
-- Auto update champion from <a href="https://riot-api-libraries.readthedocs.io/en/latest/lcu.html">LCU API</a>..
+- Auto update champion from <a href="https://riot-api-libraries.readthedocs.io/en/latest/lcu.html">LCU API</a>.
 
 # Tutorial
    1. Clone the source with `git clone https://github.com/eLhnahK/Ultilities_LOL`
