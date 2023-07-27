@@ -42,6 +42,3 @@ python UltilitiesLOL.py
 💰 MOMO: 0905324707<br />
 💰 ViettelPay: 0905324707<br />
 💰 MB Bank: 9704229202584735018
-```bash
-pip install foobar
-```
