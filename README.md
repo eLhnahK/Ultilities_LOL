@@ -13,7 +13,7 @@
 
 </div>
 
-- Support for quick champion selection with two mods (Only Pick and Lock).
+- Support for quick champion selection with two modes (Only Pick and Lock).
 - Auto update champion from <a href="https://riot-api-libraries.readthedocs.io/en/latest/lcu.html">LCU API</a>..
 
 # Tutorial
