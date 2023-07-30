@@ -13,29 +13,32 @@
 
 </div>
 
-- Change the skin of your champion, your ward, other champions, towers, minions, and jungle monsters in the game.
-- Automatic skin database update.
-- Support for spectator mode.
-- Change skins anytime and unlimited times in a single game.
-- Supports all popular languages ​​in the world.
-- In-game configuration with <a href="https://github.com/ocornut/imgui">ImGui</a>.
-- <a href="https://github.com/nlohmann/json">JSON</a> based configuration saving & loading
+- Support for quick champion selection with two modes (Only Pick and Lock).
+- Auto update champion from <a href="https://riot-api-libraries.readthedocs.io/en/latest/lcu.html">LCU API</a>.
 
-# Building
-   1. Clone the source with `git clone --recursive https://github.com/R3nzTheCodeGOD/R3nzSkin.git`
-   2. Build in Visual Studio 2019/2022 with configuration "Your Region - x64"
+# Tutorial
+   1. Clone the source with command
+```bash
+git clone https://github.com/eLhnahK/Ultilities_LOL
+```
+   2. Install support library
+```bash
+pip install -r requirements.txt
+```
+   3. Run command
+```bash
+python UltilitiesLOL.py
+```
 
-# Usage
-   1. Compile source or <a href="https://github.com/R3nzTheCodeGOD/R3nzSkin/releases/latest">download</a> a compiled version.
-   2. Use `R3nzSkin_Injector.exe` or inject the built DLL into the game yourself.
-      - *Administrator* privilege may be needed if the injector failed to inject the DLL.
-      - League client can crash if `R3nzSkin` is injected before being in the game.
-         - A workaround is to not inject until you are in the game (you will need to be fast to not disrupt the game).
-   3. Press <kbd>Insert</kbd> to bring up the menu.
-   4. Select the skin for you, your teammates, enemies, and wards.
+## Help
+☎️ Contact:<br />
+👉 [Facebook](https://www.facebook.com/lehquockhanh/)<br />
+👉 Zalo: 0905324707
 
-# Further optimizations
-   If your CPU supports AVX / AVX2 / AVX-512 instruction set, you can enable it in project settings. This should result in more performant code, optimized for your CPU. Currently SSE2 instructions are selected in project settings.
+## Authors
+[eLhnahK](https://www.facebook.com/lehquockhanh/)
 
-# Credits
-   This program is an improved and updated version of the <a href="https://github.com/B3akers">B3akers</a>/<a href="https://github.com/B3akers/LeagueSkinChanger">LeagueSkinChanger</a> project.
+## DONATE 💸💸💸
+💰 MOMO: 0905324707<br />
+💰 ViettelPay: 0905324707<br />
+💰 MB Bank: 9704229202584735018
