@@ -169,7 +169,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
-        self.btnStart.clicked.connect(lambda: self.runBtnStart(lcuhelper, dataSummoner[2], self.cbChampions.currentText()))           
+        self.btnStart.clicked.connect(lambda: self.runBtnStart(lcuhelper, self.cbChampions.currentText()))           
         self.btnStop.clicked.connect(lambda: self.runBtnStop(lcuhelper))
         self.btnMyFacebook.clicked.connect(self.openMyFacebook)
         self.cbPickOnly.clicked.connect(self.checkCbPickOnly)
@@ -192,10 +192,10 @@ class Ui_MainWindow(object):
         self.btnStop.setText(_translate("MainWindow", "Stop"))
         self.label_5.setText(_translate("MainWindow", "© 2023 eLhnahK - All Rights Reserved."))
 
-    def runBtnStart(self, lcuhelper: LCUHelper, summonerId: str, championId: str):     
+    def runBtnStart(self, lcuhelper: LCUHelper, championId: str):     
         if self.cbPickOnly.isChecked() == True and self.cbLock.isChecked() == False:
             lcuhelper.isStopThreading = False
-            threadCreate = threading.Thread(target=lcuhelper.quickPickChamp, args=(summonerId, championId, False))
+            threadCreate = threading.Thread(target=lcuhelper.quickPickChamp, args=(championId, False))
             self.btnStart.setEnabled(False)
             self.btnStart.setStyleSheet("font: 75 bold 14pt \"Times New Roman\";\n""color: rgb(0, 0, 0);\n""background-color: rgb(150, 150, 150)")
             self.btnStop.setEnabled(True)
@@ -205,7 +205,7 @@ class Ui_MainWindow(object):
             threadCreate.start()
         elif self.cbPickOnly.isChecked() == False and self.cbLock.isChecked() == True:
             lcuhelper.isStopThreading = False
-            threadCreate = threading.Thread(target=lcuhelper.quickPickChamp, args=(summonerId, championId, True))
+            threadCreate = threading.Thread(target=lcuhelper.quickPickChamp, args=(championId, True))
             self.btnStart.setEnabled(False)
             self.btnStart.setStyleSheet("font: 75 bold 14pt \"Times New Roman\";\n""color: rgb(0, 0, 0);\n""background-color: rgb(150, 150, 150)")
             self.btnStop.setEnabled(True)

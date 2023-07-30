@@ -63,7 +63,7 @@ class LCUHelper:
 
         return dataChamps
 
-    def quickPickChamp(self, summonerId: str, ChampionId: str, flagsLockChamp):
+    def quickPickChamp(self, ChampionId: str, flagsLockChamp):
         while True:
             if self.isStopThreading:
                 break
@@ -76,33 +76,31 @@ class LCUHelper:
                 if self.isStopThreading:
                     break          
                 resultData = requests.get(urlLCU, headers=headers, verify=False)
-                cellID = 0
                 if resultData.status_code == 200:
-                    resultData =resultData.json()
-                    for test1 in resultData['myTeam']:
-                        if test1['summonerId'] == summonerId:
-                            cellID = test1['cellId']
+                    resultData = resultData.json()
                     for test1 in resultData['actions'][0]:
-                        if test1['actorCellId'] == cellID:
+                        if test1['actorCellId'] == resultData['localPlayerCellId']:
                             actionID = test1['id']
+                    
 
-                    if flagsLockChamp:
-                        data = json.dumps({
-                                "championId": re.search(r"(.*?) -", ChampionId).group(1),
-                                "completed": True
+                    data = json.dumps({
+                            "championId": re.search(r"(.*?) -", ChampionId).group(1),                      
                         })
+
+                    if flagsLockChamp:                       
+                        urlLCU1 = f"https://127.0.0.1:{self.port}/lol-champ-select/v1/session/actions/{actionID}"
+                        requests.patch(urlLCU1, headers=headers, data=data, verify=False)
+                        urlLCU2 = f"https://127.0.0.1:{self.port}/lol-champ-select/v1/session/actions/{actionID}/complete"
+                        requests.post(urlLCU2, headers=headers, verify=False)
                     else:
-                        data = json.dumps({
-                                "championId": re.search(r"(.*?) -", ChampionId).group(1),
-                                "completed": False
-                        })
-
-                    urlLCU = f"https://127.0.0.1:{self.port}/lol-champ-select/v1/session/actions/{actionID}"
-                    requests.patch(urlLCU, headers=headers, data=data, verify=False).status_code
+                        urlLCU1 = f"https://127.0.0.1:{self.port}/lol-champ-select/v1/session/actions/{actionID}"
+                        requests.patch(urlLCU1, headers=headers, data=data, verify=False)               
                     break
                 else:
                     time.sleep(0.5)
 
-
-
-
+# testLCU = getPortPassLCU()
+# for lcu in testLCU:
+#     print(lcu)
+# authTokenLCU = "Basic " + encodeBase64Token(f"riot:{testLCU[1]}")
+# print(authTokenLCU)
