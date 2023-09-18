@@ -7,7 +7,7 @@
   
    # **[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=+++++++++Ultilities+LOL+-+Thanks+for+using)](https://git.io/typing-svg)**
 
-   <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t1.15752-9/363272683_1045584749762406_7124674849438557960_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Te3dPJPzjRIAX_RCKzF&_nc_ht=scontent.fdad3-6.fna&oh=03_AdS0sm2hpkdV0iZbXmsE4UFvobexnCSWBDiJFqyssBTQ-A&oe=64E8B5FB">
+   <img src="https://github.com/eLhnahK/Ultilities_LOL/blob/main/gui.png?raw=true">
 
    `Ultilities LOL` is a tool to support quick champion selection for the game League of Legends.
 
